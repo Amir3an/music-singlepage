@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amir_3an</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="background-image: url('icon and desing/Sound webpage_img/image.png')"
+  >
+    <div class="flex-container">
+      <div class="flexbox"">
+        <div id="divLogo">
+          <img src="icon and desing/Sound webpage_img/logo.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Specfications</li></a>
+            <a href="#"><li>Products</li></a>
+            <a href="#"><li>Connect</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="secflexbox">
+        <div id="divPictior">
+          <p>THE<br />REAL<br />SOUND</p>
+        </div>
+        <p class="text">Click Here To Play</p>
+        <img id="img" src="icon and desing/Sound webpage_img/play.png" />
+        <audio id="MyAudio">
+          <source
+            src="icon and desing/Sound webpage_img/6ix9ine - Dope2.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+      </div>
+    </div>
+    <script>
+      var MyAudio = document.getElementById("MyAudio");
+      var icon = document.getElementById("img");
+
+      icon.onclick = function () {
+        if (MyAudio.paused) {
+          MyAudio.play();
+          icon.src = "icon and desing/Sound webpage_img/pause.png";
+        } else {
+          MyAudio.pause();
+          icon.src = "icon and desing/Sound webpage_img/play.png";
+        }
+      };
+    </script>
+  </body>
+</html>
