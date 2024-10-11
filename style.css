@@ -18,6 +18,11 @@ body {
   width: 90%;
   margin: auto;
 }
+.secflexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 #divLogo > img {
   width: 100px;
   height: 60px;
