@@ -41,11 +41,6 @@ body {
   color: white;
   font-size: 60pt;
   font-weight: bold;
-  display: flex;
-  text-align: left;
-  position: relative;
-  margin-bottom: auto;
-  left: 70px;
 }
 #img {
   width: 50px;
