@@ -1,7 +1,7 @@
-var MyAudio = document.getElementById("MyAudio");
-var icon = document.getElementById("img");
+const MyAudio = document.getElementById("MyAudio");
+const icon = document.getElementById("img");
 
-icon.onclick = function () {
+icon.addEventListener("click", () => {
   if (MyAudio.paused) {
     MyAudio.play();
     icon.src = "icon and desing/Sound webpage_img/pause.png";
@@ -9,4 +9,4 @@ icon.onclick = function () {
     MyAudio.pause();
     icon.src = "icon and desing/Sound webpage_img/play.png";
   }
-};
+});
