@@ -23,6 +23,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.family {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
 #divLogo > img {
   width: 100px;
   height: 60px;
@@ -49,7 +55,6 @@ body {
   margin-top: 240px;
 }
 .text {
-  margin-top: 16rem;
   font-size: small;
   color: gray;
 }
